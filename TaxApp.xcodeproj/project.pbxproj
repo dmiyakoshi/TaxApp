@@ -13,7 +13,7 @@
 		B18B06B82738C83800E377AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18B06B62738C83800E377AA /* Main.storyboard */; };
 		B18B06BA2738C83900E377AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18B06B92738C83900E377AA /* Assets.xcassets */; };
 		B18B06BD2738C83900E377AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18B06BB2738C83900E377AA /* LaunchScreen.storyboard */; };
-		B18B06C52738E01000E377AA /* TaxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18B06C42738E01000E377AA /* TaxTableViewController.swift */; };
+		B18B06CD273934D800E377AA /* TaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18B06CC273934D800E377AA /* TaxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		B18B06B92738C83900E377AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B18B06BC2738C83900E377AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B18B06BE2738C83900E377AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B18B06C42738E01000E377AA /* TaxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxTableViewController.swift; sourceTree = "<group>"; };
+		B18B06CC273934D800E377AA /* TaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				B18B06B22738C83800E377AA /* SceneDelegate.swift */,
 				B18B06B42738C83800E377AA /* ViewController.swift */,
 				B18B06B62738C83800E377AA /* Main.storyboard */,
-				B18B06C42738E01000E377AA /* TaxTableViewController.swift */,
+				B18B06CC273934D800E377AA /* TaxViewController.swift */,
 				B18B06B92738C83900E377AA /* Assets.xcassets */,
 				B18B06BB2738C83900E377AA /* LaunchScreen.storyboard */,
 				B18B06BE2738C83900E377AA /* Info.plist */,
@@ -144,7 +144,7 @@
 				B18B06B52738C83800E377AA /* ViewController.swift in Sources */,
 				B18B06B12738C83800E377AA /* AppDelegate.swift in Sources */,
 				B18B06B32738C83800E377AA /* SceneDelegate.swift in Sources */,
-				B18B06C52738E01000E377AA /* TaxTableViewController.swift in Sources */,
+				B18B06CD273934D800E377AA /* TaxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
