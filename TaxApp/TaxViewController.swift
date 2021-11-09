@@ -57,10 +57,9 @@ class TaxViewController: UIViewController {
     
     func showPrice() {
         if textFiled.text != nil {
-            inputPrice = textFiled.textToInt //extensioのtextToIntでInt型に変換しています
-            let priceInTax = Float(inputPrice) * selectedTax
+            inputPrice = textFiled.textToInt //extensionのtextToIntでInt型に変換しています
             
-            displatPriceLbel.text = "\(priceInTax)"
+            displatPriceLbel.text = "\(Float(inputPrice) * selectedTax)"
         } else {
             inputPrice = 0
         }

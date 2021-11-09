@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oCq-kx-hZP">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,22 +13,22 @@
             <objects>
                 <viewController id="qig-Vb-quZ" customClass="TaxViewController" customModule="TaxApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PZd-f5-2kf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8xu-ck-B7c">
-                                <rect key="frame" x="0.0" y="255" width="414" height="607"/>
+                                <rect key="frame" x="0.0" y="255" width="375" height="523"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PriceCell" textLabel="Oms-aG-lHo" style="IBUITableViewCellStyleDefault" id="bPo-6X-V7B">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bPo-6X-V7B" id="dbf-c6-9Lx">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oms-aG-lHo">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
@@ -48,33 +48,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGz-wr-U9y">
-                                <rect key="frame" x="329.5" y="158" width="54.5" height="27.5"/>
+                                <rect key="frame" x="290.66666666666669" y="158" width="54.333333333333314" height="27.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="数字を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25A-iy-3XW">
-                                <rect key="frame" x="10" y="213" width="189" height="34"/>
+                                <rect key="frame" x="10" y="213" width="175" height="28"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="25A-iy-3XW" secondAttribute="height" multiplier="106:17" id="4di-Ff-57y"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="changePrice:" destination="qig-Vb-quZ" eventType="editingChanged" id="cPf-lt-sRE"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ai9-D7-VdG">
-                                <rect key="frame" x="334" y="215" width="60" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="lcO-xj-JIv"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="追加"/>
-                                <connections>
-                                    <action selector="addButton:" destination="qig-Vb-quZ" eventType="touchUpInside" id="jn7-tp-QZ4"/>
-                                </connections>
-                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" id="HB9-r9-e0s">
-                                <rect key="frame" x="199" y="215" width="103" height="32"/>
+                                <rect key="frame" x="185" y="212" width="111" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="8%"/>
@@ -84,6 +76,17 @@
                                     <action selector="selectTaxSegment:" destination="qig-Vb-quZ" eventType="valueChanged" id="Um6-3C-g17"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ai9-D7-VdG">
+                                <rect key="frame" x="316" y="215" width="53" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ai9-D7-VdG" secondAttribute="height" multiplier="53:31" id="sZX-Dp-Nww"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="追加"/>
+                                <connections>
+                                    <action selector="addButton:" destination="qig-Vb-quZ" eventType="touchUpInside" id="jn7-tp-QZ4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="96C-MV-rzi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -93,13 +96,14 @@
                             <constraint firstItem="8xu-ck-B7c" firstAttribute="leading" secondItem="96C-MV-rzi" secondAttribute="leading" id="B2y-Fe-y6m"/>
                             <constraint firstItem="PGz-wr-U9y" firstAttribute="top" secondItem="tqW-XC-h3F" secondAttribute="bottom" constant="17" id="CLi-oN-yjk"/>
                             <constraint firstItem="PGz-wr-U9y" firstAttribute="leading" relation="lessThanOrEqual" secondItem="96C-MV-rzi" secondAttribute="leading" constant="334" id="Cbn-ZH-s0M"/>
+                            <constraint firstItem="ai9-D7-VdG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HB9-r9-e0s" secondAttribute="trailing" constant="8" symbolic="YES" id="Jgg-Zc-rVV"/>
                             <constraint firstItem="96C-MV-rzi" firstAttribute="bottom" secondItem="8xu-ck-B7c" secondAttribute="bottom" id="N7d-dU-j6o"/>
                             <constraint firstItem="96C-MV-rzi" firstAttribute="trailing" secondItem="PGz-wr-U9y" secondAttribute="trailing" constant="30" id="TVX-UQ-4LH"/>
                             <constraint firstItem="HB9-r9-e0s" firstAttribute="leading" secondItem="25A-iy-3XW" secondAttribute="trailing" id="Zl6-zD-pD2"/>
                             <constraint firstItem="ai9-D7-VdG" firstAttribute="top" secondItem="tqW-XC-h3F" secondAttribute="bottom" constant="74" id="hs6-lx-M4e"/>
                             <constraint firstItem="8xu-ck-B7c" firstAttribute="top" secondItem="tqW-XC-h3F" secondAttribute="bottom" constant="114" id="jPc-cS-Yjv"/>
                             <constraint firstItem="96C-MV-rzi" firstAttribute="trailing" secondItem="8xu-ck-B7c" secondAttribute="trailing" id="lUb-0H-wER"/>
-                            <constraint firstItem="ai9-D7-VdG" firstAttribute="trailing" secondItem="PZd-f5-2kf" secondAttribute="trailingMargin" id="lZO-2g-k6S"/>
+                            <constraint firstItem="ai9-D7-VdG" firstAttribute="trailing" secondItem="PZd-f5-2kf" secondAttribute="trailingMargin" constant="10" id="lZO-2g-k6S"/>
                             <constraint firstItem="HB9-r9-e0s" firstAttribute="top" secondItem="tqW-XC-h3F" secondAttribute="bottom" constant="75" id="x0Q-sD-NBg"/>
                         </constraints>
                     </view>
@@ -118,18 +122,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5E-kg-BZz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5206" y="-601"/>
+            <point key="canvasLocation" x="5203.125" y="-602.11267605633805"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NuY-eA-GUg">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Ics-zf-xn0" customClass="ViewController" customModule="TaxApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sdu-sv-hOh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tor-Ws-g1A">
-                                <rect key="frame" x="172" y="98" width="179" height="56.5"/>
+                                <rect key="frame" x="172" y="98" width="140" height="56.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -158,7 +162,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oCq-kx-hZP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qJh-yf-Caz">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
