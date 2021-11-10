@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var sumPrice: Int = 0
+    var sumPrice: Float = 0
 
     @IBOutlet weak var displayLabel: UILabel!
     
@@ -19,9 +19,9 @@ class ViewController: UIViewController {
         let userDefault = UserDefaults.standard
         
         if userDefault.object(forKey: "sum") != nil {
-            sumPrice = userDefault.object(forKey: "sum") as! Int
+            sumPrice = userDefault.object(forKey: "sum") as! Float
         }
-        displayLabel.text = "\(sumPrice)"
+        displayLabel.text = "\(Int(sumPrice))"
     }
 
 //    self.navigationController?.popViewController(animated: true)
