@@ -38,8 +38,8 @@ class TaxViewController: UIViewController {
     
     @IBAction func addButton(_ sender: Any) {
         if textFiled.text != nil && inputPrice != 0 {
-            priceArray.append("\(Float(inputPrice) * selectedTax)") //cellに入れるためにString型
-            totalPrice += inputPrice * selectedTax
+            priceArray.append("\(inputPrice * selectedTax)") //cellに入れるためにString型
+            totalPrice += inputPrice * selectedTax //Floatにキャストを削除
             initPrice()
             
             let userDefault = UserDefaults.standard
@@ -57,9 +57,9 @@ class TaxViewController: UIViewController {
     
     func showPrice() {
         if textFiled.text != nil {
-            inputPrice = textFiled.textToFloat //extensionのtextToIntでInt型に変換しています
+            inputPrice = textFiled.textToFloat //extensionのtextToFloatでFloat型に変換しています
             
-            displatPriceLbel.text = "\(Float(inputPrice) * selectedTax)"
+            displatPriceLbel.text = "\(inputPrice * selectedTax)" //Floatにキャストを削除
         } else {            inputPrice = 0
         }
     }
@@ -82,7 +82,7 @@ class TaxViewController: UIViewController {
 }
 
 extension UITextField {
-    var textToFloat: Float {
+    var textToFloat: Float { //ToFloatに変更
         let text = self.text
         let float = text
             .flatMap{Float($0)} ?? 0
